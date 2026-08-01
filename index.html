@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor e Sonho | Gelato & Sorvete</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@300;400;500;700&family=Inter:wght@300;400&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #fafafa; color: #171717; }
+    h1, h2, h3, .display-font { font-family: 'Cabinet Grotesk', sans-serif; }
+    .noise { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); opacity: 0.04; pointer-events: none; }
+  </style>
+</head>
+<body class="relative antialiased selection:bg-stone-200 selection:text-black">
+  <div class="fixed inset-0 noise z-50 mix-blend-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="fixed w-full z-40 bg-white/80 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-[1400px] mx-auto px-8 h-20 flex items-center justify-between">
+      <span class="display-font font-bold text-2xl tracking-tight">Sabor e Sonho</span>
+      <ul class="hidden md:flex gap-12 text-sm font-medium tracking-wide">
+        <li><a href="#filosofia" class="hover:text-stone-500 transition">Filosofia</a></li>
+        <li><a href="#sabores" class="hover:text-stone-500 transition">Cardápio</a></li>
+        <li><a href="#visita" class="hover:text-stone-500 transition">Visita</a></li>
+      </ul>
+      <a href="https://wa.me/5519998071282" class="bg-black text-white px-6 py-2.5 text-sm font-medium hover:bg-stone-800 transition">Delivery</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="pt-32 pb-24 px-8 min-h-[90vh] flex flex-col justify-center">
+    <div class="max-w-[1400px] mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
+      <div class="max-w-xl">
+        <h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.95]">Simplicidade<br>em cada bola.</h1>
+        <p class="text-lg text-stone-500 mb-10 font-light leading-relaxed max-w-md">Feitos diariamente no Jardim Chapadão. Leite fresco, frutas da estação e o tempo exato de maturação.</p>
+        <a href="#sabores" class="inline-flex items-center gap-2 border-b-2 border-black pb-1 font-medium hover:text-stone-500 hover:border-stone-500 transition">
+          Descobrir os sabores <i class="ph ph-arrow-right"></i>
+        </a>
+      </div>
+      <div class="h-[600px] bg-stone-200 w-full overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c8e9e5cb?auto=format&fit=crop&q=80&w=1200" alt="Sorvete artesanal" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </header>
+
+  <!-- Filosofia -->
+  <section id="filosofia" class="py-32 px-8 bg-white border-y border-stone-200">
+    <div class="max-w-[1400px] mx-auto grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-5">
+        <h2 class="text-4xl font-bold tracking-tighter mb-6">O Tempo é nosso principal ingrediente.</h2>
+      </div>
+      <div class="md:col-span-7">
+        <p class="text-xl text-stone-600 font-light leading-relaxed max-w-2xl">Não utilizamos atalhos. Acreditamos que o verdadeiro sorvete nasce da paciência. Cada sabor passa por um processo de maturação de 24 horas antes de ser batido, garantindo uma textura incomparável e o desenvolvimento completo das notas aromáticas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sabores -->
+  <section id="sabores" class="py-32 px-8">
+    <div class="max-w-[1400px] mx-auto">
+      <h2 class="text-3xl font-bold tracking-tighter mb-16">Seleção Clássica</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-8">
+        <div class="group cursor-pointer">
+          <div class="h-80 bg-stone-100 mb-6 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1570197781417-0c7f3e8f85cb?auto=format&fit=crop&q=80&w=800" alt="Baunilha" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          </div>
+          <h3 class="text-xl font-medium mb-2">Fava de Baunilha</h3>
+          <p class="text-stone-500 font-light text-sm">Infusão fria de favas naturais. Leve e aromático.</p>
+        </div>
+        
+        <div class="group cursor-pointer">
+          <div class="h-80 bg-stone-100 mb-6 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1550508577-df35a9634dff?auto=format&fit=crop&q=80&w=800" alt="Chocolate" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          </div>
+          <h3 class="text-xl font-medium mb-2">Cacau Intenso</h3>
+          <p class="text-stone-500 font-light text-sm">Chocolate belga 70% processado a frio.</p>
+        </div>
+        
+        <div class="group cursor-pointer">
+          <div class="h-80 bg-stone-100 mb-6 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&q=80&w=800" alt="Morango" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          </div>
+          <h3 class="text-xl font-medium mb-2">Morango Fresco</h3>
+          <p class="text-stone-500 font-light text-sm">Sorbet 100% fruta, sem adição de derivados lácteos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="py-32 px-8 bg-stone-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <i class="ph-fill ph-quotes text-4xl text-stone-300 mb-8"></i>
+      <p class="text-3xl font-light leading-relaxed text-stone-800 mb-8">"Um espaço acolhedor e um sorvete que lembra as receitas de família. O atendimento é sempre impecável."</p>
+      <div class="text-sm tracking-widest uppercase font-medium text-stone-500">Comunidade Local</div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section id="visita" class="py-32 px-8">
+    <div class="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-16">
+      <div class="h-[500px] bg-stone-200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.5!2d-47.07!3d-22.88!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUyJzQ4LjAiUyA0N8KwMDQnMTIuMCJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0; filter: grayscale(1);" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="text-4xl font-bold tracking-tighter mb-10">Onde Encontrar</h2>
+        
+        <div class="grid grid-cols-2 gap-10">
+          <div>
+            <h3 class="font-medium text-sm tracking-widest uppercase mb-4 text-stone-400">Endereço</h3>
+            <p class="text-stone-600 font-light">R. Santo Antônio Claret, 282<br>Jardim Chapadão<br>Campinas - SP</p>
+          </div>
+          <div>
+            <h3 class="font-medium text-sm tracking-widest uppercase mb-4 text-stone-400">Contato</h3>
+            <p class="text-stone-600 font-light">(19) 99807-1282</p>
+            <p class="text-stone-600 font-light mt-2"><a href="https://wa.me/5519998071282" class="border-b border-stone-300 hover:border-black transition">Pedir pelo WhatsApp</a></p>
+          </div>
+          <div>
+            <h3 class="font-medium text-sm tracking-widest uppercase mb-4 text-stone-400">Horário</h3>
+            <p class="text-stone-600 font-light">Seg — Sex: 13h – 20h<br>Sáb — Dom: 11h – 21h</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-8 border-t border-stone-200 text-center pb-40">
+    <div class="display-font font-bold text-xl mb-4">Sabor e Sonho</div>
+    <div class="text-xs text-stone-400 font-light">
+      <p>Prévia conceitual produzida por Lucas Murbach de Oiveira. Não é um site oficial deste estabelecimento.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky Bar -->
+  <div id="sticky-bar" class="fixed bottom-0 left-0 w-full pt-20 pb-10 px-8 bg-gradient-to-t from-white via-white/95 to-transparent flex justify-center opacity-0 translate-y-4 transition-all duration-700 pointer-events-none z-40">
+    <div class="text-black text-xl md:text-3xl font-light tracking-wide pointer-events-auto display-font">
+      Para mais informações entre em contato: <span class="font-medium">(19) 97131-8109</span>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.getElementById('sticky-bar');
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 200) {
+        bar.classList.remove('opacity-0', 'translate-y-4');
+        bar.classList.add('opacity-100', 'translate-y-0');
+      } else {
+        bar.classList.add('opacity-0', 'translate-y-4');
+        bar.classList.remove('opacity-100', 'translate-y-0');
+      }
+    });
+  </script>
+</body>
+</html>
